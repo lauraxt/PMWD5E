@@ -1,9 +1,9 @@
 <?php
   // create short variable names
-  $tireqty = $_POST['tireqty'];
-  $oilqty = $_POST['oilqty'];
-  $sparkqty = $_POST['sparkqty'];
-  $address = $_POST['address'];
+  $tireqty = (int) $_POST['tireqty'];
+  $oilqty = (int) $_POST['oilqty'];
+  $sparkqty = (int) $_POST['sparkqty'];
+  $address = preg_replace('/\t|\R/',' ',$_POST['address']);
   $document_root = $_SERVER['DOCUMENT_ROOT'];
   $date = date('H:i, jS F Y');
 ?>
@@ -60,12 +60,8 @@
                     .$sparkqty." spark plugs\t\$".$totalamount
                     ."\t". $address."\n";
 
-
-
     // open file for appending
-    @ $fp = fopen("$document_root/../orders/orders.txt", 'ab');
-
-    flock($fp, LOCK_EX);
+    @$fp = fopen("$document_root/../orders/orders.txt", 'ab');
 
     if (!$fp) {
       echo "<p><strong> Your order could not be processed at this time.
@@ -73,6 +69,7 @@
       exit;
     }
 
+    flock($fp, LOCK_EX);
     fwrite($fp, $outputstring, strlen($outputstring));
     flock($fp, LOCK_UN);
     fclose($fp);
