@@ -1,0 +1,50 @@
+h1 {
+    color:white;                                                            
+    font-size:24pt;                                                         
+    text-align:left;                                                        
+    font-family:arial,sans-serif;
+}
+.header,                                                                    
+.footer {
+    background-color:black;                                            
+    text-align:left;
+}                                                  
+.header-text {
+    display:inline-block;                                         
+    text-align:left;                                              
+    vertical-align:top;
+}                                          
+.menu {
+    background-color:black;                                              
+    text-align:left;
+}                                                     
+.menuitem {
+    display:inline-block;                                            
+    color:white;                                                     
+    font-size:12pt;                                                  
+    text-align:center;                                               
+    font-family:arial,sans-serif;                                    
+    font-weight:bold;                                                
+    vertical-align:top;                                              
+    padding:5px;
+}                                                     
+.menutext {
+    vertical-align:top;
+}                                             
+p {
+    color:black; 
+    font-size:12pt; 
+    text-align:justify;                         
+    font-family:arial,sans-serif;
+}                                            
+p.foot {
+    color:white; 
+    font-size:9pt; 
+    text-align:center;                      
+    font-family:arial,sans-serif; 
+    font-weight:bold;
+}                     
+a:link,a:visited,a:active {
+    color:white;                                     
+    text-decoration:none;
+}           
