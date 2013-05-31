@@ -15,25 +15,25 @@
     <div class="menuitem">                                                      
       <a href="home.html">                                                      
       <img src="s-logo.gif" alt="" height="20" width="20" />                    
-      <span class="menutext">Home</span></td>                                   
+      <span class="menutext">Home</span>                                   
       </a>                                                                      
     </div>                                                                      
     <div class="menuitem">                                                      
       <a href="contact.html">                                                   
       <img src="s-logo.gif" alt="" height="20" width="20" />                    
-      <span class="menutext">Contact</span></td>                                
+      <span class="menutext">Contact</span>                                
       </a>                                                                      
     </div>                                                                      
     <div class="menuitem">                                                      
       <a href="services.html">                                                  
       <img src="s-logo.gif" alt="" height="20" width="20" />                    
-      <span class="menutext">Services</span></td>                               
+      <span class="menutext">Services</span>                               
       </a>                                                                      
     </div>                                                                      
     <div class="menuitem">                                                      
       <a href="about.html">                                                     
       <img src="s-logo.gif" alt="" height="20" width="20" />                    
-      <span class="menutext">About</span></td>                                  
+      <span class="menutext">About</span>                                  
       </a>                                                                      
     </div>                                                                      
   </div> 
