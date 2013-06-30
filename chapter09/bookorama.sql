@@ -1,3 +1,7 @@
+create database books;
+
+use books;
+
 create table customers
 ( customerid int unsigned not null auto_increment primary key,
   name char(50) not null,
@@ -27,7 +31,7 @@ create table order_items
   quantity tinyint unsigned,
 
   primary key (orderid, isbn),
-  foreign key (orderid) references customers(customerid),
+  foreign key (orderid) references orders(orderid),
   foreign key (isbn) references books(isbn)
 );
 
